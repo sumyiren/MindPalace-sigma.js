@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/jacomyal/sigma.js.svg)](https://travis-ci.org/jacomyal/sigma.js)
 
+### Disclaimer
+!!! This is webpack compatible fork of sigma.js, please refer to original sigma.js unless you need to use it within webpack !!!
+
 sigma.js - v1.2.0
 =================
 
