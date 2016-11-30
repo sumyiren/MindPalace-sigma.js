@@ -494,10 +494,8 @@
    * @param  {sigma} s The related sigma instance.
    */
   sigma.plugins.filter = function(s) {
-    // Create filter if undefined
-    if (!filter) {
-      filter = new Filter(s);
-    }
+    // Create new filter to update the graph params
+    filter = new Filter(s);
     return filter;
   };
 
