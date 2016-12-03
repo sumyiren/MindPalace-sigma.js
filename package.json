@@ -3,10 +3,10 @@
   "version": "1.2.0",
   "description": "A JavaScript library dedicated to graph drawing.",
   "homepage": "http://sigmajs.org",
-  "bugs": "http://github.com/jacomyal/sigma.js/issues",
+  "bugs": "http://github.com/dunnock/sigma.js/issues",
   "repository": {
     "type": "git",
-    "url": "http://github.com/jacomyal/sigma.js.git"
+    "url": "http://github.com/dunnock/sigma.js.git"
   },
   "license": "MIT",
   "main": "build/sigma.require.js",
