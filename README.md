@@ -1,7 +1,11 @@
 [![Build Status](https://travis-ci.org/dunnock/sigma.js.svg?branch=master)](https://travis-ci.org/dunnock/sigma.js)
 
 ### Disclaimer
-!!! This is webpack compatible fork of sigma.js, please refer to original sigma.js unless you need to use it within webpack !!!
+
+!!! Possibly you were looking for react-sigmajs - React JSX components for SigmaJS library. !!!
+!!! This is fork version of original sigma.js with a couple of fixes required for sigma-react to work !!!
+!!! This is ES6 import compatible fork of sigma.js, please refer to original sigma.js !!!
+
 
 sigma.js - v1.2.0
 =================
