@@ -393,6 +393,15 @@
     return _eventEmitter[sigInst.id];
   };
 
+
+  sigma.prototype.stopNoverlap = function() {
+    var sigInst = this;
+
+    if (_instance[sigInst.id]) {
+      _instance[sigInst.id].stop();
+    }
+  };
+
   /**
    * Returns true if the layout has started and is not completed.
    *
