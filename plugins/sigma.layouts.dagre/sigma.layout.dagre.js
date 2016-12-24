@@ -4,10 +4,6 @@
   if (typeof sigma === 'undefined')
     throw new Error('sigma is not declared');
 
-  if (typeof dagre === 'undefined' || typeof dagre.graphlib === 'undefined')
-    console.warn('to use the dagre plugin, '
-      +'you have to include dagre and dagre.graphlib');
-
   // Initialize package:
   sigma.utils.pkg('sigma.layouts.dagre');
 
