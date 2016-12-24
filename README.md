@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/jacomyal/sigma.js.svg)](https://travis-ci.org/jacomyal/sigma.js)
+[![Build Status](https://travis-ci.org/dunnock/sigma.js.svg)](https://travis-ci.org/dunnock/sigma.js)
 
 ### Disclaimer
 
-!!! Possibly you were looking for [react-sigmajs](https://www.npmjs.com/package/react-sigmajs) - React JSX components for SigmaJS library. !!!
+!!! Possibly you were looking for [react-sigma](https://www.npmjs.com/package/react-sigma) - React JSX components for SigmaJS library. !!!
 
 !!! This is fork version of original sigma.js with a couple of fixes required for sigma-react to work !!! 
 
