@@ -14,6 +14,7 @@ To use, include all .js files under this folder.
 ## Shapes
 The plugin implements the following shapes:
   * `dashed`
+  * `dashedArrow`
   * `dotted`
   * `parallel`: two solid parallel lines representing an edge aggregating multiple edges in the original graph.
   * `tapered` (see Danny Holten, Petra Isenberg, Jean-Daniel Fekete, and J. Van Wijk (2010) Performance Evaluation of Tapered, Curved, and Animated Directed-Edge Representations in Node-Link Graphs. Research Report, Sep 2010.)
