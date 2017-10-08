@@ -1,6 +1,6 @@
 {
   "name": "sigma-react",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "A JavaScript library dedicated to graph drawing.",
   "homepage": "http://sigmajs.org",
   "bugs": "http://github.com/jacomyal/sigma.js/issues",
