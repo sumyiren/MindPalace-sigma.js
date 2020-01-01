@@ -7,14 +7,14 @@
 !!! This is ES6 import compatible fork of sigma.js, please refer to original sigma.js !!!
 
 
-sigma.js - v1.2.0
+sigma.js - v1.2.1
 =================
 
 Sigma is a JavaScript library dedicated to graph drawing, mainly developed by [@jacomyal](https://github.com/jacomyal) and [@Yomguithereal](https://github.com/Yomguithereal).
 
 ### Resources
 
-[The website](http://sigmajs.org) provides a global overview of the project, and the documentation is available in the [Github Wiki](https://github.com/jacomyal/sigma.js/wiki).
+[The website](http://sigmajs.org) provides a global overview of the project, and the documentation is available in the [GitHub Wiki](https://github.com/jacomyal/sigma.js/wiki).
 
 Also, the `plugins` and `examples` directories contain various use-cases that might help you understand how to use sigma.
 
