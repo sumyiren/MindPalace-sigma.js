@@ -2,8 +2,7 @@
 
 ### Disclaimer
 
-!!! Possibly you were looking for react-sigmajs - React JSX components for SigmaJS library. !!!
-!!! This is fork version of original sigma.js with a couple of fixes required for sigma-react to work !!!
+!!! This is fork version of original sigma.js with a couple of fixes required for sigma to work in a webpack app !!!
 !!! This is ES6 import compatible fork of sigma.js, please refer to original sigma.js !!!
 
 
