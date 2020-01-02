@@ -1,12 +1,14 @@
 {
-  "name": "sigma-1-npm",
+  "name": "@maxsparrow/sigma",
   "version": "1.2.1",
   "description": "A JavaScript library dedicated to graph drawing.",
   "homepage": "http://sigmajs.org",
-  "bugs": "http://github.com/jacomyal/sigma.js/issues",
+  "bugs": {
+    "url": "http://github.com/jacomyal/sigma.js/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "http://github.com/jacomyal/sigma.js.git"
+    "url": "https://github.com/jacomyal/sigma.js.git"
   },
   "license": "MIT",
   "main": "build/sigma.require.js",
@@ -30,5 +32,10 @@
     "test": "grunt travis",
     "build": "grunt build",
     "prepublish": "grunt npmPrePublish"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {}
 }
