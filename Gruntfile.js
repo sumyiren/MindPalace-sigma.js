@@ -75,6 +75,7 @@ module.exports = function(grunt) {
     'layout.forceAtlas2',
     'layout.noverlap',
     'neo4j.cypher',
+    'neo4j.cypher2',
     'parsers.gexf',
     'parsers.json',
     'pathfinding.astar',

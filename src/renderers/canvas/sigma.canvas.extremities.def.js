@@ -34,5 +34,11 @@
     ) (
       target, context, settings
     );
+
+    (
+      sigma.canvas.edgehovers.def
+    ) (
+      edge, source, target, context, settings
+    );
   };
 }).call(this);

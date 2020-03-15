@@ -53,5 +53,11 @@
       target[prefix + 'y']
     );
     context.stroke();
+
+
+    context.font = '80px'
+    context.fillText(
+      edge.label, 10, 90
+    );
   };
 })();
