@@ -10142,12 +10142,113 @@ if (typeof exports !== 'undefined') {
       target[prefix + 'y']
     );
     context.stroke();
+    context.closePath();
 
 
-    context.font = '80px'
-    context.fillText(
-      edge.label, 10, 90
-    );
+    var fontSize,
+        edgex = (source[prefix + 'x'] + target[prefix + 'x']) / 2,
+        edgey = (source[prefix + 'y'] + target[prefix + 'y']) / 2,
+        x, y, w, h, e,
+
+    fontSize = (settings('labelSize') === 'fixed') ?
+        settings('defaultLabelSize') :
+        settings('labelSizeRatio') * size;
+
+    context.font = [
+        settings('activeFontStyle'),
+        fontSize + 'px',
+        settings('activeFont') || settings('font')
+      ].join(' ');
+
+    // context.beginPath();
+    // // context.fillStyle = settings('defaultHoverLabelBGColor');
+
+    // if (edge.label && typeof edge.label === 'string') {
+    //   x = Math.round(edgex - fontSize / 2 - 2);
+    //   y = Math.round(edgey - fontSize / 2 - 2);
+    //   w = Math.round(
+    //     context.measureText(edge.label).width + fontSize / 2 + size + 7
+    //   );
+    //   h = Math.round(fontSize + 4);
+    //   e = Math.round(fontSize / 2 + 2);
+
+    //   context.moveTo(x, y + e);
+    //   context.arcTo(x, y, x + e, y, e);
+    //   context.lineTo(x + w, y);
+    //   context.lineTo(x + w, y + h);
+    //   context.lineTo(x + e, y + h);
+    //   context.arcTo(x, y + h, x, y + h - e, e);
+    //   context.lineTo(x, y + e);
+
+    //   context.closePath();
+    //   context.fill();
+
+    //   context.shadowOffsetX = 0;
+    //   context.shadowOffsetY = 0;
+    //   context.shadowBlur = 0;
+    //   console.log('HEREEE');
+    // }
+    // console.log('HEREEE2');
+
+    // context.fillStyle =  settings('defaultNodeBorderColor');
+    // context.arc(
+    //   x,
+    //   y,
+    //   size + settings('borderSize'),
+    //   0,
+    //   Math.PI * 2,
+    //   true
+    // );
+    // context.closePath();
+    // context.fill();
+    context.beginPath();
+
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
+    context.shadowBlur = 8;
+    context.shadowColor = settings('labelHoverShadowColor');
+
+    if (edge.label && typeof edge.label === 'string') {
+      var x = Math.round(edgex - fontSize / 2 - 2);
+      console.log(x)
+      console.log(edgex)
+      console.log(fontSize)
+      var y = Math.round(edgey - fontSize / 2 - 2);
+      var  w = Math.round(
+        context.measureText(edge.label).width + fontSize / 2 + size + 7
+      );
+      var h = Math.round(fontSize + 4);
+      var e = Math.round(fontSize / 2 + 2);
+
+      console.log(x, y ,w,h,e)
+      context.moveTo(x, y + e);
+      context.arcTo(x, y, x + e, y, e);
+      context.lineTo(x + w, y);
+      context.lineTo(x + w, y + h);
+      context.lineTo(x + e, y + h);
+      context.arcTo(x, y + h, x, y + h - e, e);
+      context.lineTo(x, y + e);
+
+      context.closePath();
+      context.fillStyle="white"
+      context.fill();
+
+      context.shadowOffsetX = 0;
+      context.shadowOffsetY = 0;
+      context.shadowBlur = 0;
+    }
+
+
+    context.beginPath();
+    context.fillStyle="black";
+    context.fillText(edge.label, edgex+ size + 3, edgey + fontSize / 3);
+    // context.fillRect(edgex, edgey, 20, 30);
+
+    // context.fillText(
+    //   edge.label,
+    //   edgex,
+    //   edgey
+    // );
   };
 })();
 
